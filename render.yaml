@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: laravel-app
+    env: docker
+    plan: free
+    region: oregon
+    branch: main
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: "apache2-foreground"
